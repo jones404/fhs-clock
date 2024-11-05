@@ -1,0 +1,124 @@
+/* * * * * * * * * * * * * *
+
+Copright 2023 Riley Jones. 
+All Rights Reserved.
+
+CSS of FHS Clock.
+
+* * * * * * * * * * * * * * */
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 27px;
+  background: #18181b;
+  color: #fff;
+  text-align: center
+}
+
+.open,
+.show {
+  display: block !important
+}
+
+.closed,
+.hide {
+  display: none !important
+}
+
+br {
+  user-select: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px
+}
+
+.dots span {
+  font-size: 27px;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both
+}
+
+.dots span:nth-child(2) {
+  animation-delay: .2s
+}
+
+.dots span:nth-child(3) {
+  animation-delay: .4s
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 0
+  }
+
+  20% {
+    opacity: 1
+  }
+}
+
+.all {
+  margin-left: 10px;
+  text-shadow: 0 0 5px #000
+}
+
+.main,
+.title {
+  margin: 0 auto
+}
+
+#releaseend,
+#schoolend {
+  display: none
+}
+
+.prv {
+  filter: brightness(60%)
+}
+
+.main {
+  padding-top: 35px;
+  width: 450px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, .1)
+}
+
+.title {
+  background: #a1b4ff;
+  background: linear-gradient(to right, #a1b4ff 11%, #943e9e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 400px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 60px
+}
+
+.popup {
+  text-align: center;
+  margin-top: -50px;
+  font-size: 14px;
+  filter: brightness(75%);
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.popup:hover {
+  animation: whee 1s infinite;
+}
+
+@keyframes whee {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(5deg);}
+  50% {transform: rotate(0eg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}

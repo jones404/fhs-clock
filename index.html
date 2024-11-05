@@ -1,0 +1,79 @@
+<!--* * * * * * * * * * * * * *
+
+Copright 2023 Riley Jones. 
+All Rights Reserved.
+
+HTML of FHS Clock.
+
+* * * * * * * * * * * * * *--->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>FHS Clock</title>
+    <meta name="description" content="A clock that is synchronized to Franklin High School's 2023 timezone.">
+    <meta name="keywords" content="fhsclock,FHS Clock,Franklin High School Clock,Franklin High School Time">
+    <meta name="author" content="Riley Jones">
+    <link rel="stylesheet" href="style.css?v=1.32" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://www.franklin.k12.wi.us/uploaded/themes/default/images/favicon.ico">
+  </head>
+
+  <body>
+    <h1 class="title">FHS Clock</h1>
+    <p class="popup"><a target="popup" onclick="window.open('https://poll-maker.com/poll5043218x40b7C4bA-153','popup','width=600,height=360')">vote in the poll &#x219D;</a></p>
+    <div class="main">
+      <text class="all dots day prv"> Current day: <br /></text>
+      <em class="all" id="day">Synchronizing <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </em>
+      <br />
+      <br />
+      <text class="all dots ctime prv"> Current time: <br /></text>
+      <em class="all" id="clock">Synchronizing <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </em>
+      <br />
+      <br />
+      <span id="schoolhours">
+        <text class="all dots stime prv"> School ends in: <br /></text>
+        <em class="all" id="countdown">Synchronizing <span>.</span>
+          <span>.</span>
+          <span>.</span>
+        </em>
+        <br />
+        <br />
+      </span>
+      <span id="schoolend">
+        <text class="all prv"> School ends in: <br /></text>
+        <em class="all">N/A</em>
+        <br />
+        <br />
+      </span>
+      <span id="releaseend">
+        <text class="all prv"> Release time: <br /></text>
+        <em class="all">N/A</em>
+        <br />
+        <br />
+      </span>
+      <span id="releasetime">
+        <text class="all dots rtime prv"> Release time: <br /></text>
+        <em class="all" id="release">Synchronizing <span>.</span>
+          <span>.</span>
+          <span>.</span>
+        </em>
+        <br />
+        <br />
+      </span>
+    </div>
+    <small class="footer">created by riley jones. &lt;&sol;&gt;</small>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js?v=1.31"></script>
+  </body>
+
+</html>
